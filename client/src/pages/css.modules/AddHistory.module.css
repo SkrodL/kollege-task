@@ -1,0 +1,215 @@
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.leftBlock{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: min-content;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 20px black;
+    overflow: hidden;
+}
+.leftBlock > input{
+    margin-top: 21px;
+    height: 2em;
+    font-weight: bold;
+    font-size: 2em;
+}
+.leftBlock > input:last-child{
+    height: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 21px 0;
+}
+.fileUpload input[type="file"] {
+    display: none;
+}
+.fileUpload {
+    width: 100%;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+    background: #919191;
+    color: #fff;
+    text-align: center;
+    transition: 0.2s;
+}
+.fileUpload div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: center center no-repeat;
+    background-size: cover;
+}
+.fileUpload:hover {
+    background: #a2a2a2;
+}
+.fileUpload label {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fileUpload span {
+    line-height: 40px;
+    font-weight:bold;
+}
+.rightBlock{
+    width: calc(100% - 600px);
+    display: grid;
+    grid-template-areas: "a a" "b c";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    height: 903px;
+}
+.rightBlock button{
+    display: inline-block;
+    color: #1f1f1f;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 11px 11px 0 0;
+    transition: 0.2s;
+    background: white;
+    height: 30px;
+    width: 100%;
+}
+.rightBlock button:hover {
+    background: rgba(0, 191, 255, 0.2);
+}
+.rightBlock button:active {
+    background: #60d4fc;
+}
+.paragraph{
+    grid-area: a;
+}
+.optionalCard{
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 20px black;
+    overflow: hidden;
+    max-height: 100%;
+}
+.scrollableBlock{
+    display: block;
+    max-height: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background: #fff;
+    border: 1px solid #C1C1C1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding:0 20px;
+}
+.scrollableBlock button{
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 5px 0 0;
+    border: none;
+    background: none;
+}
+.scrollableBlock .paragraph{
+    text-indent: 20px;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    border: 3px rgba(117, 117, 117, 0.5) solid;
+    outline: none;
+    line-height: 20px;
+    min-height: 40px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.scrollableBlock .paragraph:focus{
+    border: 3px #000000 solid;
+}
+.scrollableBlock .paragraph:hover{
+    border: 3px #000000 solid;
+}
+
+.scrollableBlock .poem{
+    text-indent: 20px;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    border: 3px rgba(117, 117, 117, 0.5) solid;
+    outline: none;
+    line-height: 20px;
+    min-height: 40px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 0.4s;
+    border-radius: 5px;
+    text-align: center;
+}
+.scrollableBlock .poem:focus{
+    border: 3px #000000 solid;
+}
+.scrollableBlock .poem:hover{
+    border: 3px #000000 solid;
+}
+.scrollableBlock .award{
+    text-indent: 20px;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    border: 3px rgba(117, 117, 117, 0.5) solid;
+    outline: none;
+    line-height: 20px;
+    min-height: 40px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.moduleButton{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    padding: 5px 10px;
+    text-decoration: none;
+    line-height: 45px;
+    border-radius: 45px;
+    align-items: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgb(0, 0, 0);
+    transition: .3s;
+    opacity: 0.7;
+}
+.moduleButton:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+    opacity: 1;
+}
+.moduleButton img{
+    margin-right: 10px;
+    height: 100%;
+}

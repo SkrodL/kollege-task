@@ -1,0 +1,29 @@
+.card{
+    width: 500px;
+    height: min-content;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 20px black;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+    .card{
+        width: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card{
+        width: 300px;
+    }
+}
+
+@media (max-width: 780px) {
+    .card{
+        width: 100% !important;
+    }
+}
